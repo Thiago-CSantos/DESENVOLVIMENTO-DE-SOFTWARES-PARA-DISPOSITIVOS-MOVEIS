@@ -20,16 +20,11 @@ fun main() {
 
         val response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-        var a:String = "";
+        println(response.body())
 
-        for (item in 0..response.body().length){
-            if(response.body()[item]){
-
-            }
-            println()
-        }
-
-        println(a);
+        var result = response.body().split(",");
+        println("TITULO: ${result[0].split(":")[1]} ")
+        println("ANO: ${result[1].split(":")[1]} ")
     }
 
 
