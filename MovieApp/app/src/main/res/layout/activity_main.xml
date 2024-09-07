@@ -6,15 +6,45 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/txtTeste"
-        android:layout_width="177dp"
-        android:layout_height="87dp"
-        android:text="@string/textoQ"
+        android:id="@+id/textSalvacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/lblNome"
+        android:textAlignment="center"
+        android:textSize="39sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.707"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="106dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="105dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/editName"
+        app:layout_constraintBottom_toBottomOf="@+id/textSalvacao"
+        app:layout_constraintTop_toTopOf="@+id/textSalvacao"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="#0727D9"
+        android:backgroundTint="#FF0000"
+        android:backgroundTintMode="screen"
+        android:text="@string/btnSalvar"
+        app:layout_constraintEnd_toEndOf="@+id/textSalvacao"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="@+id/textSalvacao"
+        app:layout_constraintTop_toBottomOf="@+id/textSalvacao" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
