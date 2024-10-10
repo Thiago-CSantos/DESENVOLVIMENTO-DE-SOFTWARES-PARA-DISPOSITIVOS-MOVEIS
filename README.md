@@ -4,3 +4,6 @@
 ## Caso use Intellij 
 - basta mudar para a versão que ele suporta atualmente
 - `libs.versions.toml` mude o `agp` para a versão `"8.1.0"`
+
+
+# RicleView
